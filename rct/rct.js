@@ -389,6 +389,7 @@ rct.process = function (host, rctElements, iobInstance) {
 		let sTmp = '';
 		sTmp += command;
 		sTmp += byte2HexString((id.length + data.length) / 2);
+		//sTmp += byte2HexString((/*id.length + data.length*/16) / 2);
 		sTmp += id;
 		sTmp += data;
 

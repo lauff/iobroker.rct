@@ -693,6 +693,16 @@ rct.cmd['wifi.connected_ap_ssid'] = { serial: 0, id: 'F8DECCE6' };
 rct.cmd['wifi.service_ip'] = { serial: 0, id: 'F9FD0D61' };
 rct.cmd['wifi.server_ip'] = { serial: 0, id: 'FF2A258B' };
 
+rct.cmd['power_mng_soc_min'] = { serial:0, id: 'CE266F0F' }; //min SOC
+rct.cmd['power_mng_soc_max'] = { serial:0, id: '97997C93' };
+rct.cmd['power_mng_calib_charge_power'] = { serial:0, id: 'F393B7B0' }; //maximaler Netzbezug im Kalibriermodus
+rct.cmd['power_mng_soc_target_set'] = { serial:0, id: 'D1DFC969' }; // SOC Ziel
+rct.cmd['buf_v_control_power_reduction_max_solar_grid'] = { serial:0, id: 'F473BC5E' }; // Leistungsreduktion
+rct.cmd['io_board_load_set'] = { serial:0, id: '872F380B' };
+rct.cmd['p_rec_lim'] = { serial:0, id: '54829753' };
+rct.cmd['power_mng_battery_power_extern'] = { serial:0, id: 'BD008E29' };
+
+
 rct.cmdReverse = {};
 rct.cmdReverse['0AFDD6CF'] = { name: 'acc_conv.i_acc_lp_fast', type: 'FLOAT', unit: 'A', description: 'Battery current',ioBrokerType: 'number' };
 rct.cmdReverse['B0FA4D23'] = { name: 'acc_conv.i_charge_max', type: 'FLOAT', unit: 'A', description: 'Max. battery converter charge current',ioBrokerType: 'number' };
